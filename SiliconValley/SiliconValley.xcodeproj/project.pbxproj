@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B62AF2F425D31BA900673454 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62AF2F325D31BA900673454 /* Network.swift */; };
+		B62AF2F925D31BCC00673454 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62AF2F825D31BCC00673454 /* NetworkError.swift */; };
+		B62AF2FE25D31D7000673454 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62AF2FD25D31D7000673454 /* WebServices.swift */; };
+		B637336425C1E7CC00ECEDC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637336325C1E7CC00ECEDC5 /* AppDelegate.swift */; };
+		B637336625C1E7CC00ECEDC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637336525C1E7CC00ECEDC5 /* SceneDelegate.swift */; };
+		B637336B25C1E7CC00ECEDC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B637336925C1E7CC00ECEDC5 /* Main.storyboard */; };
+		B637336E25C1E7CC00ECEDC5 /* SiliconValley.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B637336C25C1E7CC00ECEDC5 /* SiliconValley.xcdatamodeld */; };
+		B637337025C1E7D000ECEDC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B637336F25C1E7D000ECEDC5 /* Assets.xcassets */; };
+		B637337325C1E7D000ECEDC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B637337125C1E7D000ECEDC5 /* LaunchScreen.storyboard */; };
+		B637337E25C1E7D000ECEDC5 /* SiliconValleyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637337D25C1E7D000ECEDC5 /* SiliconValleyTests.swift */; };
+		B637338925C1E7D000ECEDC5 /* SiliconValleyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637338825C1E7D000ECEDC5 /* SiliconValleyUITests.swift */; };
+		B637339D25C1E87800ECEDC5 /* hbo-silicon-valley.json in Resources */ = {isa = PBXBuildFile; fileRef = B637339C25C1E87800ECEDC5 /* hbo-silicon-valley.json */; };
+		B673DA6925C322860006B9FB /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673DA6825C322860006B9FB /* MovieTableViewController.swift */; };
+		B673DA7225C323040006B9FB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673DA7125C323040006B9FB /* Movie.swift */; };
+		B673DA7F25C32D4A0006B9FB /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673DA7E25C32D4A0006B9FB /* MovieTableViewCell.swift */; };
+		B679FC3225D3C90C0029DBB2 /* ErrorReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B679FC3125D3C90C0029DBB2 /* ErrorReporting.swift */; };
+		B68225A125C440D0000D09ED /* MovieDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68225A025C440D0000D09ED /* MovieDetailedViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B637337A25C1E7D000ECEDC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B637335825C1E7CB00ECEDC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B637335F25C1E7CC00ECEDC5;
+			remoteInfo = SiliconValley;
+		};
+		B637338525C1E7D000ECEDC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B637335825C1E7CB00ECEDC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B637335F25C1E7CC00ECEDC5;
+			remoteInfo = SiliconValley;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B62AF2F325D31BA900673454 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		B62AF2F825D31BCC00673454 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		B62AF2FD25D31D7000673454 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		B637336025C1E7CC00ECEDC5 /* SiliconValley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiliconValley.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B637336325C1E7CC00ECEDC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B637336525C1E7CC00ECEDC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B637336A25C1E7CC00ECEDC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B637336D25C1E7CC00ECEDC5 /* SiliconValley.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SiliconValley.xcdatamodel; sourceTree = "<group>"; };
+		B637336F25C1E7D000ECEDC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B637337225C1E7D000ECEDC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B637337425C1E7D000ECEDC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B637337925C1E7D000ECEDC5 /* SiliconValleyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiliconValleyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B637337D25C1E7D000ECEDC5 /* SiliconValleyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiliconValleyTests.swift; sourceTree = "<group>"; };
+		B637337F25C1E7D000ECEDC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B637338425C1E7D000ECEDC5 /* SiliconValleyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiliconValleyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B637338825C1E7D000ECEDC5 /* SiliconValleyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiliconValleyUITests.swift; sourceTree = "<group>"; };
+		B637338A25C1E7D100ECEDC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B637339C25C1E87800ECEDC5 /* hbo-silicon-valley.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "hbo-silicon-valley.json"; sourceTree = "<group>"; };
+		B63733A125C1EA1900ECEDC5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B673DA6825C322860006B9FB /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		B673DA7125C323040006B9FB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		B673DA7E25C32D4A0006B9FB /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		B679FC3125D3C90C0029DBB2 /* ErrorReporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReporting.swift; sourceTree = "<group>"; };
+		B68225A025C440D0000D09ED /* MovieDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailedViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B637335D25C1E7CC00ECEDC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B637337625C1E7D000ECEDC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B637338125C1E7D000ECEDC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B637335725C1E7CB00ECEDC5 = {
+			isa = PBXGroup;
+			children = (
+				B637336225C1E7CC00ECEDC5 /* SiliconValley */,
+				B637337C25C1E7D000ECEDC5 /* SiliconValleyTests */,
+				B637338725C1E7D000ECEDC5 /* SiliconValleyUITests */,
+				B637336125C1E7CC00ECEDC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B637336125C1E7CC00ECEDC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B637336025C1E7CC00ECEDC5 /* SiliconValley.app */,
+				B637337925C1E7D000ECEDC5 /* SiliconValleyTests.xctest */,
+				B637338425C1E7D000ECEDC5 /* SiliconValleyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B637336225C1E7CC00ECEDC5 /* SiliconValley */ = {
+			isa = PBXGroup;
+			children = (
+				B673DA7025C322DB0006B9FB /* Models */,
+				B673DA6725C3222A0006B9FB /* Controllers */,
+				B68225A825C44816000D09ED /* Delegates */,
+				B6E743CC25C5876F0095F233 /* Resourches */,
+				B68225AF25C4483F000D09ED /* Views */,
+				B637337425C1E7D000ECEDC5 /* Info.plist */,
+				B637336C25C1E7CC00ECEDC5 /* SiliconValley.xcdatamodeld */,
+			);
+			path = SiliconValley;
+			sourceTree = "<group>";
+		};
+		B637337C25C1E7D000ECEDC5 /* SiliconValleyTests */ = {
+			isa = PBXGroup;
+			children = (
+				B637337D25C1E7D000ECEDC5 /* SiliconValleyTests.swift */,
+				B637337F25C1E7D000ECEDC5 /* Info.plist */,
+			);
+			path = SiliconValleyTests;
+			sourceTree = "<group>";
+		};
+		B637338725C1E7D000ECEDC5 /* SiliconValleyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B637338825C1E7D000ECEDC5 /* SiliconValleyUITests.swift */,
+				B637338A25C1E7D100ECEDC5 /* Info.plist */,
+			);
+			path = SiliconValleyUITests;
+			sourceTree = "<group>";
+		};
+		B673DA6725C3222A0006B9FB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B673DA6825C322860006B9FB /* MovieTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B673DA7025C322DB0006B9FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B673DA7125C323040006B9FB /* Movie.swift */,
+				B679FC3125D3C90C0029DBB2 /* ErrorReporting.swift */,
+				B62AF2F325D31BA900673454 /* Network.swift */,
+				B62AF2FD25D31D7000673454 /* WebServices.swift */,
+				B62AF2F825D31BCC00673454 /* NetworkError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B68225A825C44816000D09ED /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B637336325C1E7CC00ECEDC5 /* AppDelegate.swift */,
+				B637336525C1E7CC00ECEDC5 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		B68225AF25C4483F000D09ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B68225A025C440D0000D09ED /* MovieDetailedViewController.swift */,
+				B673DA7E25C32D4A0006B9FB /* MovieTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6E743CC25C5876F0095F233 /* Resourches */ = {
+			isa = PBXGroup;
+			children = (
+				B63733A125C1EA1900ECEDC5 /* README.md */,
+				B637336925C1E7CC00ECEDC5 /* Main.storyboard */,
+				B637337125C1E7D000ECEDC5 /* LaunchScreen.storyboard */,
+				B637339C25C1E87800ECEDC5 /* hbo-silicon-valley.json */,
+				B637336F25C1E7D000ECEDC5 /* Assets.xcassets */,
+			);
+			path = Resourches;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B637335F25C1E7CC00ECEDC5 /* SiliconValley */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B637338D25C1E7D100ECEDC5 /* Build configuration list for PBXNativeTarget "SiliconValley" */;
+			buildPhases = (
+				B637335C25C1E7CC00ECEDC5 /* Sources */,
+				B637335D25C1E7CC00ECEDC5 /* Frameworks */,
+				B637335E25C1E7CC00ECEDC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiliconValley;
+			productName = SiliconValley;
+			productReference = B637336025C1E7CC00ECEDC5 /* SiliconValley.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B637337825C1E7D000ECEDC5 /* SiliconValleyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B637339025C1E7D100ECEDC5 /* Build configuration list for PBXNativeTarget "SiliconValleyTests" */;
+			buildPhases = (
+				B637337525C1E7D000ECEDC5 /* Sources */,
+				B637337625C1E7D000ECEDC5 /* Frameworks */,
+				B637337725C1E7D000ECEDC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B637337B25C1E7D000ECEDC5 /* PBXTargetDependency */,
+			);
+			name = SiliconValleyTests;
+			productName = SiliconValleyTests;
+			productReference = B637337925C1E7D000ECEDC5 /* SiliconValleyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B637338325C1E7D000ECEDC5 /* SiliconValleyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B637339325C1E7D100ECEDC5 /* Build configuration list for PBXNativeTarget "SiliconValleyUITests" */;
+			buildPhases = (
+				B637338025C1E7D000ECEDC5 /* Sources */,
+				B637338125C1E7D000ECEDC5 /* Frameworks */,
+				B637338225C1E7D000ECEDC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B637338625C1E7D000ECEDC5 /* PBXTargetDependency */,
+			);
+			name = SiliconValleyUITests;
+			productName = SiliconValleyUITests;
+			productReference = B637338425C1E7D000ECEDC5 /* SiliconValleyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B637335825C1E7CB00ECEDC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					B637335F25C1E7CC00ECEDC5 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					B637337825C1E7D000ECEDC5 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = B637335F25C1E7CC00ECEDC5;
+					};
+					B637338325C1E7D000ECEDC5 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = B637335F25C1E7CC00ECEDC5;
+					};
+				};
+			};
+			buildConfigurationList = B637335B25C1E7CB00ECEDC5 /* Build configuration list for PBXProject "SiliconValley" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B637335725C1E7CB00ECEDC5;
+			productRefGroup = B637336125C1E7CC00ECEDC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B637335F25C1E7CC00ECEDC5 /* SiliconValley */,
+				B637337825C1E7D000ECEDC5 /* SiliconValleyTests */,
+				B637338325C1E7D000ECEDC5 /* SiliconValleyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B637335E25C1E7CC00ECEDC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B637339D25C1E87800ECEDC5 /* hbo-silicon-valley.json in Resources */,
+				B637337325C1E7D000ECEDC5 /* LaunchScreen.storyboard in Resources */,
+				B637337025C1E7D000ECEDC5 /* Assets.xcassets in Resources */,
+				B637336B25C1E7CC00ECEDC5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B637337725C1E7D000ECEDC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B637338225C1E7D000ECEDC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B637335C25C1E7CC00ECEDC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B673DA6925C322860006B9FB /* MovieTableViewController.swift in Sources */,
+				B637336E25C1E7CC00ECEDC5 /* SiliconValley.xcdatamodeld in Sources */,
+				B62AF2F425D31BA900673454 /* Network.swift in Sources */,
+				B679FC3225D3C90C0029DBB2 /* ErrorReporting.swift in Sources */,
+				B673DA7F25C32D4A0006B9FB /* MovieTableViewCell.swift in Sources */,
+				B673DA7225C323040006B9FB /* Movie.swift in Sources */,
+				B68225A125C440D0000D09ED /* MovieDetailedViewController.swift in Sources */,
+				B62AF2FE25D31D7000673454 /* WebServices.swift in Sources */,
+				B62AF2F925D31BCC00673454 /* NetworkError.swift in Sources */,
+				B637336425C1E7CC00ECEDC5 /* AppDelegate.swift in Sources */,
+				B637336625C1E7CC00ECEDC5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B637337525C1E7D000ECEDC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B637337E25C1E7D000ECEDC5 /* SiliconValleyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B637338025C1E7D000ECEDC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B637338925C1E7D000ECEDC5 /* SiliconValleyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B637337B25C1E7D000ECEDC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B637335F25C1E7CC00ECEDC5 /* SiliconValley */;
+			targetProxy = B637337A25C1E7D000ECEDC5 /* PBXContainerItemProxy */;
+		};
+		B637338625C1E7D000ECEDC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B637335F25C1E7CC00ECEDC5 /* SiliconValley */;
+			targetProxy = B637338525C1E7D000ECEDC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B637336925C1E7CC00ECEDC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B637336A25C1E7CC00ECEDC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B637337125C1E7D000ECEDC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B637337225C1E7D000ECEDC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B637338B25C1E7D100ECEDC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B637338C25C1E7D100ECEDC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B637338E25C1E7D100ECEDC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UM4RY56J7;
+				INFOPLIST_FILE = SiliconValley/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ChristosKatomoniatis.SiliconValley;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B637338F25C1E7D100ECEDC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UM4RY56J7;
+				INFOPLIST_FILE = SiliconValley/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ChristosKatomoniatis.SiliconValley;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B637339125C1E7D100ECEDC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UM4RY56J7;
+				INFOPLIST_FILE = SiliconValleyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ChristosKatomoniatis.SiliconValleyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiliconValley.app/SiliconValley";
+			};
+			name = Debug;
+		};
+		B637339225C1E7D100ECEDC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UM4RY56J7;
+				INFOPLIST_FILE = SiliconValleyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ChristosKatomoniatis.SiliconValleyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiliconValley.app/SiliconValley";
+			};
+			name = Release;
+		};
+		B637339425C1E7D100ECEDC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UM4RY56J7;
+				INFOPLIST_FILE = SiliconValleyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ChristosKatomoniatis.SiliconValleyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SiliconValley;
+			};
+			name = Debug;
+		};
+		B637339525C1E7D100ECEDC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UM4RY56J7;
+				INFOPLIST_FILE = SiliconValleyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ChristosKatomoniatis.SiliconValleyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SiliconValley;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B637335B25C1E7CB00ECEDC5 /* Build configuration list for PBXProject "SiliconValley" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B637338B25C1E7D100ECEDC5 /* Debug */,
+				B637338C25C1E7D100ECEDC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B637338D25C1E7D100ECEDC5 /* Build configuration list for PBXNativeTarget "SiliconValley" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B637338E25C1E7D100ECEDC5 /* Debug */,
+				B637338F25C1E7D100ECEDC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B637339025C1E7D100ECEDC5 /* Build configuration list for PBXNativeTarget "SiliconValleyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B637339125C1E7D100ECEDC5 /* Debug */,
+				B637339225C1E7D100ECEDC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B637339325C1E7D100ECEDC5 /* Build configuration list for PBXNativeTarget "SiliconValleyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B637339425C1E7D100ECEDC5 /* Debug */,
+				B637339525C1E7D100ECEDC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B637336C25C1E7CC00ECEDC5 /* SiliconValley.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B637336D25C1E7CC00ECEDC5 /* SiliconValley.xcdatamodel */,
+			);
+			currentVersion = B637336D25C1E7CC00ECEDC5 /* SiliconValley.xcdatamodel */;
+			path = SiliconValley.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B637335825C1E7CB00ECEDC5 /* Project object */;
+}
